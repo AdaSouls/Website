@@ -8,6 +8,7 @@ import Type from './components/Type';
 import Mint from './components/Mint';
 import Poap from './components/Poap';
 import './App.css';
+import Drop from './components/Drop';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/features" element={<Features addFeatures={addFeatures} token={token} />} />
         <Route path="/mint" element={<Mint token={token} />} />
         <Route path="/poap" element={<Poap />} />
+        <Route path="/drop" element={<Drop />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>

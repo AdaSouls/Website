@@ -16,7 +16,7 @@ const Home = () => {
         The first platform for issuing Soulbound Tokens in Cardano
       </h4>
       <br></br>
-      <Link to="/network">
+      <Link to="#">
         <motion.button
           whileHover={{ 
             scale: 1.1,
@@ -24,7 +24,7 @@ const Home = () => {
             boxShadow: "0px 0px 8px rgb(255,255,255)"
           }}
         >
-          Start Here
+          Connect Wallet
         </motion.button>
       </Link>
     </motion.div>

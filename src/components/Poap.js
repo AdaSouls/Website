@@ -13,7 +13,7 @@ const Poap = () => {
         Welcome to AdaSouls
       </h2>
       <h4>
-        POAP in Cardano
+        A fork of POAP deployed in Milkomeda
       </h4>
       <br></br>
       <Link to="/drop">
