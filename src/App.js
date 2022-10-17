@@ -7,8 +7,8 @@ import Features from './components/Features';
 import Type from './components/Type';
 import Mint from './components/Mint';
 import Poap from './components/Poap';
-import './App.css';
 import Drop from './components/Drop';
+import './App.css';
 
 function App() {
 
