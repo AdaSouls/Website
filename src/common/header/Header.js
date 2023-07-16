@@ -54,7 +54,7 @@ const HeaderTwo = () => {
                                     <li className="header-social-link">
                                         <ul className="social-icon-list list-unstyled">                                            
                                             <li><a target={'_blank'} href="https://twitter.com/AdaSouls"><FaTwitter /></a></li>
-                                            <li><a target={'_blank'} href="https://twitter.com/AdaSouls"><FaGithub /></a></li>
+                                            <li><a target={'_blank'} href="https://github.com/AdaSouls"><FaGithub /></a></li>
                                         </ul>
                                     </li>
                                     {/* <li className="sidemenu-btn d-lg-block d-none">
