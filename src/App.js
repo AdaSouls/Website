@@ -1,53 +1,30 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from './components/Header';
-import Home from './components/Home';
-import Network from './components/Network';
-import Features from './components/Features';
-import Type from './components/Type';
-import Mint from './components/Mint';
-import Poap from './components/Poap';
-import Drop from './components/Drop';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ScrollToTop from './component/scrollToTop/ScrollToTop';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+// Home Pages Import
+import AdaSouls from './pages/AdaSouls';
 
-  const [token, setToken] = useState({ network: "", type: "", features: [] });
+// Pages 
+// import AboutUs from './pages/AboutUs';
+// import Contact from './pages/Contact';
 
-  const chooseNetwork = (network) => {
-    setToken({ ...token, network })
-  }
-  
-  const chooseType = (type) => {
-    setToken({ ...token, type })
-  }
+// Css Import
+import './assets/scss/app.scss';
 
-  const addFeatures = (features) => {
-    let newFeatures;
-    if(!token.features.includes(features)){
-      newFeatures = [...token.features, features];
-    } else {
-      newFeatures = token.features.filter(item => item !== features);
-    }
-    setToken({ ...token, features: newFeatures });
-  }
-
+const App = () => {
   return (
-    <>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/network" element={<Network chooseNetwork={chooseNetwork} token={token} />} />
-        <Route path="/type" element={<Type chooseType={chooseType} token={token} />} />
-        <Route path="/features" element={<Features addFeatures={addFeatures} token={token} />} />
-        <Route path="/mint" element={<Mint token={token} />} />
-        <Route path="/poap" element={<Poap />} />
-        <Route path="/drop" element={<Drop />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-    </>
-  );
+    <Router>
+		<ScrollToTop>
+			<Routes>
+				<Route path={process.env.PUBLIC_URL + "/"} element={<AdaSouls />}/>
+				{/* <Route path={process.env.PUBLIC_URL + "/about-us"} element={<AboutUs />}/>
+				<Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact />}/> */}
+			</Routes>
+		</ScrollToTop>
+    </Router>
+  )
 }
 
-export default App;
+export default App; 
