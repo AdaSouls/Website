@@ -5,7 +5,7 @@ import Nav from './Nav';
 // import OffcanvasMenu from './OffcanvasMenu';
 import StickyHeader from './StickyHeader';
 import SwitcherHeader from '../../elements/switcher/SwitcherHeader';
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 import MobileMenu from './MobileMenu';
 
 
@@ -52,8 +52,9 @@ const HeaderTwo = () => {
                             <div className="header-action">
                                 <ul className="list-unstyled">
                                     <li className="header-social-link">
-                                        <ul className="social-icon-list list-unstyled">
+                                        <ul className="social-icon-list list-unstyled">                                            
                                             <li><a target={'_blank'} href="https://twitter.com/AdaSouls"><FaTwitter /></a></li>
+                                            <li><a target={'_blank'} href="https://twitter.com/AdaSouls"><FaGithub /></a></li>
                                         </ul>
                                     </li>
                                     {/* <li className="sidemenu-btn d-lg-block d-none">
