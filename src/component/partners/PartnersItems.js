@@ -34,7 +34,7 @@ const PartnersItems = () => {
             {Data.map((data, index) => (
                 <div className="col-lg-4 col-6" key={index}>
                     <div className="brand-grid">
-                        <a target={'_blank'} href={process.env.PUBLIC_URL + data.link}><img src={process.env.PUBLIC_URL + data.image} alt="Brand" /></a>
+                        <a target={'_blank'} href={process.env.PUBLIC_URL + data.link} rel="noreferrer"><img src={process.env.PUBLIC_URL + data.image} alt="Brand" /></a>
                     </div>
                 </div>
             ))}
