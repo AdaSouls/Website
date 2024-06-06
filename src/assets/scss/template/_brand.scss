@@ -7,9 +7,11 @@
 .brand-grid {
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     a {
-        margin: 0px auto;
+        width: 250px;
+        display: flex;
+        align-items: center;
     }
     img {
         filter: grayscale(100%);
@@ -17,6 +19,7 @@
         margin: 0px auto;
         opacity: 0.3;
         transition: var(--transition);
+        max-width: 100%;
     }
     &:hover, &.active {
         img {
