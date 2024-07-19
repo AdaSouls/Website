@@ -10,10 +10,6 @@ const Data = [
         link: "https://www.dcSpark.io/"
     },
     {
-        image: "/images/brand/vacuumlabs.png",
-        link: "https://vacuumlabs.com/"
-    },
-    {
         image: "/images/brand/gamechanger.png",
         link: "https://gamechanger.finance"
     },
