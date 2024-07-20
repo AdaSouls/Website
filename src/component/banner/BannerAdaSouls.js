@@ -12,7 +12,7 @@ const BannerAdaSouls = () => {
                         <div className="banner-content">
                         <h1 className="title">AdaSouls</h1>
                         <h2 className="sub-title">Be My Guest</h2>
-                        <h5 className='description'>AdaSouls is the first open platform to issue Soulbound Tokens and POAPs in Cardano<br></br>
+                        <h5 className='description'>AdaSouls is the first open platform to create Soulbound Tokens and POAPs in Cardano<br></br>
                         </h5>
                             
                         </div>
