@@ -6,6 +6,8 @@ import Nav from './Nav';
 import StickyHeader from './StickyHeader';
 import SwitcherHeader from '../../elements/switcher/SwitcherHeader';
 import { FaTwitter, FaGithub } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
+import { FaAppStoreIos } from "react-icons/fa";
 import MobileMenu from './MobileMenu';
 
 
@@ -52,7 +54,9 @@ const HeaderTwo = () => {
                             <div className="header-action">
                                 <ul className="list-unstyled">
                                     <li className="header-social-link">
-                                        <ul className="social-icon-list list-unstyled">                                            
+                                        <ul className="social-icon-list list-unstyled">
+                                            <li><a target={'_blank'} href="https://docs.adasouls.io" rel="noreferrer"><IoDocumentText /></a></li>
+                                            <li><a target={'_blank'} href="https://app.adasouls.io" rel="noreferrer"><FaAppStoreIos /></a></li>                                            
                                             <li><a target={'_blank'} href="https://twitter.com/AdaSouls" rel="noreferrer"><FaTwitter /></a></li>
                                             <li><a target={'_blank'} href="https://github.com/AdaSouls" rel="noreferrer"><FaGithub /></a></li>
                                         </ul>
