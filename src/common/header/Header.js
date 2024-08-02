@@ -56,7 +56,7 @@ const HeaderTwo = () => {
                                     <li className="header-social-link">
                                         <ul className="social-icon-list list-unstyled">
                                             <li><a target={'_blank'} href="https://docs.adasouls.io" rel="noreferrer"><IoDocumentText /></a></li>
-                                            <li><a target={'_blank'} href="https://app.adasouls.io" rel="noreferrer"><FaAppStoreIos /></a></li>                                            
+                                            <li><a target={'_blank'} href="https://develop.adasouls.io" rel="noreferrer"><FaAppStoreIos /></a></li>                                            
                                             <li><a target={'_blank'} href="https://twitter.com/AdaSouls" rel="noreferrer"><FaTwitter /></a></li>
                                             <li><a target={'_blank'} href="https://github.com/AdaSouls" rel="noreferrer"><FaGithub /></a></li>
                                         </ul>
